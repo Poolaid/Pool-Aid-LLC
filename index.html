@@ -233,30 +233,41 @@ button {
 </section>
 
 <!-- CONTACT -->
-<<form action="https://formspree.io/f/xkoogkpz" method="POST">
+<section class="section" id="contact">
+  <img src="photo-repair-2.jpg" class="repair-photo">
+  <h2>Contact Us</h2>
+  <p><strong>Fill out form, Text or Call 973-975-8640</strong></p>
 
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="tel" name="phone" placeholder="Phone Number" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="text" name="address" placeholder="Service Address" required>
-  <input type="date" name="date">
+  <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="contact">
 
-  <select name="time">
-    <option>Preferred Time of Day</option>
-    <option>Morning</option>
-    <option>Afternoon</option>
-    <option>Evening</option>
-  </select>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="address" placeholder="Service Address" required>
+    <input type="date" name="date">
 
-  <select name="service">
-    <option>Service Requested</option>
-    <option>Dive and Patch</option>
-    <option>Emergency Service</option>
-  </select>
+    <select name="time">
+      <option>Preferred Time of Day</option>
+      <option>Morning</option>
+      <option>Afternoon</option>
+      <option>Evening</option>
+    </select>
 
-  <textarea name="details" rows="5" placeholder="Additional Details"></textarea>
-  <button type="submit">Submit</button>
+    <select name="service">
+      <option>Service Requested</option>
+      <option>Dive and Patch</option>
+      <option>Emergency Service</option>
+    </select>
 
-</form>
+    <textarea name="details" rows="5" placeholder="Additional Details"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+<p style="text-align:center; font-size:14px; margin-top:40px;">
+  <a href="disclaimer.html">Affiliate Disclosure & Privacy Policy</a>
+</p>
 
 
+</body>
+</html>
